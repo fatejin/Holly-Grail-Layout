@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        border-bottom: 1px solid gray;
+        padding-left: 20px;
+    }
+
+    footer {
+        border-top: 1px solid gray;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .content nav {
+        border-right: 1px solid gray;
+    }
+
+    .content aside {
+        border-left: 1px solid gray;
+
+    }
+
+    @media(max-width:500px) {
+        .content {
+            flex-direction: column;
+        }
+    }
+
+    .content nav,
+    .content aside {
+        border: none;
+        flex-basis: auto;
+    }
+
+    main {
+        order: 0;
+
+    }
+
+    nav {
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+        display: none;
+    }
+
+    nav,
+    aside {
+        flex-basis: 150px;
+        flex-shrink: 0;
+
+    }
+
+    main {
+        padding: 10px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Jin's life story</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScripit</li>
+                    <li>Node.Js</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, minima molestiae esse cupiditate sunt
+                ratione harum distinctio accusamus maxime quas? Adipisci ad ipsa cum eos provident iure nostrum ipsam!
+                Sint
+                beatae blanditiis exercitationem velit perspiciatis, optio aliquam excepturi consequatur sequi tempora
+                aperiam nemo tempore accusantium error porro inventore sunt. Dolores ut architecto voluptas cumque rem
+                dolorem explicabo delectus eius earum ex consequatur, non, exercitationem mollitia accusantium
+                recusandae,
+                laboriosam molestiae labore tenetur voluptatibus reprehenderit qui dolorum sed! Voluptatibus magnam
+                facere
+                molestiae explicabo? Consequatur ipsam aspernatur odit nemo minus voluptatem iste dolor adipisci
+                reprehenderit tempora saepe nulla eius quia quas placeat magni facilis rem ullam quae unde omnis libero
+                esse, maxime dignissimos. Eligendi ipsa soluta alias, quidem voluptatibus dicta, beatae itaque ipsam
+                iste
+                rem similique laboriosam sint recusandae ipsum neque quae nihil numquam vero odit facere hic temporibus
+                eius
+                cum blanditiis. Corporis atque laborum tenetur laudantium consequatur sapiente autem dolorum tempora,
+                neque
+                reiciendis sequi harum sit dicta quos repudiandae doloribus accusantium veritatis nulla! Possimus, ab
+                dolorem. Totam nobis, repudiandae explicabo dolores corporis veritatis omnis culpa! Blanditiis eos,
+                suscipit, itaque rem, quia quasi similique odit reiciendis harum minus dignissimos doloremque iure quis.
+                Sint eum tempora fuga dolorum ut officiis aperiam alias iste suscipit! Repudiandae facilis culpa,
+                tenetur
+                natus nobis assumenda qui quia quos libero ea maxime praesentium enim provident atque aliquam? Delectus
+                quidem minima quia labore ex adipisci ad odio repellat illo distinctio iure eveniet quibusdam cumque
+                vitae,
+                beatae exercitationem deleniti libero quod neque dolores nobis rem porro rerum. Pariatu
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">생활코딩 홈페이지</a>
+        </footer>
+    </div>
+</body>
+
+</html>
